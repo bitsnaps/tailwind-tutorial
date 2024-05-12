@@ -11,15 +11,17 @@ function updateCart(id) {
 </script>
 
 <template>
-  <div class="nav-bar"></div>
-
-  <div class="cart">Cart({{ cart.length }})</div>
+  <div class="h-16 mb-6 bg-gradient-to-r from-ocean to-leaf">
+  </div>
+  <div class="my-6 mx-24 p-7 mist-border-1 bg-cloud float-right">
+    Cart({{ cart.length }})
+  </div>
   <product-display :premium="premium" @add-to-cart="updateCart"></product-display>
 </template>
 
 <style scoped>
 
-.nav-bar {
+/* .nav-bar {
   height: 60px;
   margin-bottom: 25px;
   background: linear-gradient(90deg, #16c0b0, #84cf6a);
@@ -31,5 +33,5 @@ function updateCart(id) {
   border: 1px solid #d8d8d8;
   background-color: white;
   float: right;
-}
+} */
 </style>
